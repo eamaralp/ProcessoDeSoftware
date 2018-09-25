@@ -90,12 +90,6 @@
 				\fontsize{50}{50} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont 
 				}
 
-%% ====================================
-%% ====================================
-%% mude o titulo  do projeto
-%% ====================================
-%% ====================================
-
 \title{Processo de produção de sofware pra saúde}		% Title of your article goes here
 
 %% ====================================
@@ -116,8 +110,6 @@
 \date{}																				% No date
 
 
-
-
 %%% Begin document
 \begin{document}
 \maketitle
@@ -126,13 +118,6 @@
 % The first character should be within \initial{}
 
 
-
-
-%% ====================================
-%% ====================================
-%% mude o resumo  do projeto
-%% ====================================
-%% ====================================
 \initial{E}\textbf{ste documento visa a demonstrar o modelo de produção de software em uma empresa de grande porte(cerca de 200 funcionários). O modelo adotado apresenta o processo de desenvolvimento por meio de editais.}
 
 %% ====================================
@@ -152,8 +137,6 @@
 \listoftables
 
 
-
-
 \clearpage
 \renewcommand{\contentsname}{Sumário}
 \tableofcontents
@@ -166,13 +149,17 @@
 %% ====================================
 \section{Introdução}
 Este processo é utilizado para a produção de softwares na área da saúde em diversos produtos disponibilizados para
-a Auto gestão de saúde e também para Medicina de grupo.
+a Auto gestão de saúde e também para Medicina de grupo. Seu foco principal é a implementação de funcionalidades demandadas
+de um licitação a qual possui um edital de requisitos a serem cumpridos.
+
+Apenas grupos de Auto Gestão demandam por meio de editais, pois este é o meio utilizado para o gerenciamento da saúde
+em orgãos públicos. O segmento de medicina de grupo é voltado para a comercialização de planos de saúde e não se enquadram
+aos orgãos públcos para o gerenciamento de vidas.
 
 :
 
 \begin{itemize}
-	\item uma descrição mais detalhada do projeto;
-	\item Sistemas de gestão de saúde;
+	\item Sistemas de gestão de saúde de Auto Gestão;
 	\item Diversos colaboradores, os mesmo serão representados por seus papéis no processo de desenvolvimento;
 	\item https://github.com/eamaralp/ProcessoDeSoftware;
 \end{itemize}
@@ -182,7 +169,11 @@ a Auto gestão de saúde e também para Medicina de grupo.
 Descreva aqui o processo utilizado.
 
 \subsection{Papeis}
-Explique e enumere os papeis (roles) do processo.
+\begin{itemize}
+	\item \textbf{Cliente:}
+	\item \textbf{Analista de negócios:}
+	\item \textbf{Revisor de código:}
+\end{itemize}
 
 \subsection{Atividades}
 Enumere e explique cada uma das atividades, relacione com os papéis.
@@ -276,16 +267,6 @@ Não se preocupe o local em que a figura será renderizada em seu texto. Preocup
 	\caption{Exemplo de figura sem escala}
 	\label{fig2}
 \end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
-
 
 %% ***********************************************************************
 %% === ate aqui    =====  ================================================
