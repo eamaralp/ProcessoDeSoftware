@@ -170,13 +170,35 @@ Descreva aqui o processo utilizado.
 
 \subsection{Papeis}
 \begin{itemize}
-	\item \textbf{Cliente:}
-	\item \textbf{Analista de negócios:}
-	\item \textbf{Revisor de código:}
+	\item \textbf{Cliente:} Representante do orgão público responsável em auditar o produto a ser desenvolvido.
+	\item \textbf{Analista de negócios:} Responsável em realizar a análise de negócio dos editais e realizar a extração dos requisitos contidos nestes. 
+	\item \textbf{Gerente de desenvolvimento:} Responsável em gerenciar uma ou mais equipe de desenvolvimento. Deve priorizar,organizar e gerenciar 
+	os times de desenvolvimento para garantir que as funcionalidades sejam entregues dentro do cronograma estabelecido.
+	\item \textbf{Desenvolvedor:} Responsável em realizar a análise de sistemas, verificando necessidades técnicas e implementar as funcionalidades analisadas.
+	\item \textbf{Revisor de código:} Desenvolver com mais conhecimento técnico que exerce o papél de desenvolvedor e também realiza 
+	a revisão de código de outros desenvolvedores.
+	\item \textbf{Atualizador:} Responsável em aplicar os artefatos gerados durante o desenvolvimento no ambiente de qualidade.
+	\item \textbf{Analista de testes:} Responsável em realizar testes nas funcionaliades de acrodo com as análises e verificar se estas não possuem nenhum erro.
 \end{itemize}
 
 \subsection{Atividades}
-Enumere e explique cada uma das atividades, relacione com os papéis.
+
+O processo de desenvolvimento de incia no momento em que a empresa é contemplada pela licitação, desta forma uma análise prévia é realizada pelos arquitetos
+de negócio com o intuito de verificar requisitos os quais já são contemplados pelos produtos da empresa, desta forma elminando parte deste requisitos e tornando o
+custo de implementação das funcionalidades menor. O analista valida os requisitos junto ao cliente, com a intenção de descreve-los da melhor forma porssível e verifica
+se este requisitos será implementado em um sistema já existente ou se será necessário desenvlver um novo sistema para que as novas funcionalidades sejam implementadas.
+
+Após a definição dos requisitos os documentos de análise são encaminhados ao gerente de desenvolvimento, o qual define um cronograma de acrodo com as funcionalidades e
+sua complexidades, um analista de sistemas esperiente realiza uma estimativa de tempo de implementação de cada funcionalidade para que o gerente de desenvolvimento possa
+apresentar um cronograma mais assertivo.
+
+Ao entrar em acordo com o cliente junto ao cronograma o gerente de desenvolvimento encaminha as atividades para as devidas equipes de acordo com a área de atução das mesmas
+e o sistema em que serão implementadas. Desta forma o desenvolvimento pode ser realizado de maneira paralela, de acordo com as dependências entre as funcionalidades e sistemas.
+
+Após as funcionalidades serem encaminhadas para a equipe de desenvolvimento, as mesmas são priorizadas e reestimadas pela equipe para que o gestor posssa ter um melhor
+detalhamento do cronograma. Após receber sua atividade o desenvolvedor escreve uma breve análise de sistemas, de acrodo com o MODELO() e encaminha para o analista de sistemas
+realizar a revisão de sua análise. Depois de aprovada a análise o desenvolvedor incia o desenvolvimento da funcionalidade e ao seu término encaminha o código gerado para
+a revisão, a qual será realizada por outro desenvolvedor de maior experiência.
 
 
 \section{Execução do projeto}
@@ -220,9 +242,9 @@ Texto antes da lista
 \begin{itemize}
 	\item First item in a list 
 	\item Second item in a list 
-	\item Third item in a list
+\item Third item in a list
 \end{itemize}
-
+\label{}
 \subsubsection{Uma subseção de terceiro nivel}
 
 Exemplo de uma subseção
@@ -232,17 +254,15 @@ Exemplo de uma subseção
 Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho.
 Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
 
-\input{tab2}
+\input{tab_visao_estatica}
 
 Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab2} temos a relação de ....
+Na tab \ref{tab_visao_estatica} temos a relação de ....
 
 
 Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
 
 \subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
 
 Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
 
@@ -250,7 +270,6 @@ Não se preocupe o local em que a figura será renderizada em seu texto. Preocup
 \centering
 \includegraphics[width=\textwidth]{processo_de_software_BPMN1}
 \caption{Exemplo de figura com escala horizontal}
-\label{fig1}
 \end{figure}
 
 

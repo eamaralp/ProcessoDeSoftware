@@ -1,0 +1,11 @@
+\usepackage[table,xcdraw]{xcolor}
+\documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\begin{tabular}{llllllll}
+\rowcolor[HTML]{FFFFFF} 
+\textbf{Fase} & \textbf{Atividade} & \textbf{Tarefa} & \textbf{Artefato de entrada} & \textbf{Artefato de saída} & \textbf{Habilidades} & \textbf{Papel responsável} & \textbf{Ferramentas} \\
+ &  &  &  &  &  &  &  \\
+ &  &  &  &  &  &  &  \\
+ &  &  &  &  &  &  & 
+\end{tabular}
+\end{table}
