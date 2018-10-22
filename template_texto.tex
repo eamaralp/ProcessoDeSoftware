@@ -130,17 +130,6 @@
 \centerline{\textit{\textbf{\today}}}
 
 \clearpage
-    \renewcommand*\listfigurename{Lista de figuras}
-\listoffigures
-
-\renewcommand*\listtablename{Lista de tabelas}
-\listoftables
-
-
-\clearpage
-\renewcommand{\contentsname}{Sumário}
-\tableofcontents
-\clearpage
 
 %% ====================================
 %% ====================================
@@ -156,7 +145,7 @@ Apenas grupos de Auto Gestão demandam por meio de editais, pois este é o meio 
 em orgãos públicos. O segmento de medicina de grupo é voltado para a comercialização de planos de saúde e não se enquadram
 aos orgãos públcos para o gerenciamento de vidas.
 
-:
+Informações adicionais do processo:
 
 \begin{itemize}
 	\item Sistemas de gestão de saúde de Auto Gestão;
@@ -184,10 +173,20 @@ detalhamento do cronograma. Após receber sua atividade o desenvolvedor escreve 
 realizar a revisão de sua análise. Depois de aprovada a análise o desenvolvedor incia o desenvolvimento da funcionalidade e ao seu término encaminha o código gerado para
 a revisão, a qual será realizada por outro desenvolvedor de maior experiência.
 
+Caso a revisão de código não apresente nenhum apontamento para correções por parte do desenvolvedor, o revisor de código realiza o merge junto ao código fonte do release
+e informa ao desenvolvedor que suas alterações já estão junto ao código do release. O desenvolvedor então realiza o versionamento manual dos artefatos alterados ou gerados
+em sua atividade. Logo após o atualizador realiza a instalação destes artefatos em ambiente de qualidade e encaminha o ambiente para a equipe de testes para que os testes
+possam ser realizados.
+
+Após a realização dos testes pela equipe de qualidade, o atualizador realiza a instalação dos artefatos em ambiente de homologação do cliente. Para que o cliente juntamente
+com o analista de negócios possam validar as novas funcionalidades implementadas. Após o aceite do cliente em ambeinte de homologação o mesmo fica responsável em atualizar
+seu ambiente de produção para que o sistema possa ser utilizado de fato.
+
 \subsection{Papeis}
 \begin{itemize}
 	\item \textbf{Cliente:} Representante do orgão público responsável em auditar o produto a ser desenvolvido.
-	\item \textbf{Analista de negócios:} Responsável em realizar a análise de negócio dos editais e realizar a extração dos requisitos contidos nestes. 
+	\item \textbf{Analista de negócios:} Responsável em realizar a análise de negócio dos editais e realizar a extração dos requisitos contidos nestes.
+	\item \textbf{Analista de sistemas:} Responsável em realizar as estimativas inciais do projeto e revisão de análise de sistemas escritas pelos desenvolvedores.
 	\item \textbf{Gerente de desenvolvimento:} Responsável em gerenciar uma ou mais equipe de desenvolvimento. Deve priorizar,organizar e gerenciar 
 	os times de desenvolvimento para garantir que as funcionalidades sejam entregues dentro do cronograma estabelecido.
 	\item \textbf{Desenvolvedor:} Responsável em realizar a análise de sistemas, verificando necessidades técnicas e implementar as funcionalidades analisadas.
@@ -198,85 +197,43 @@ a revisão, a qual será realizada por outro desenvolvedor de maior experiência
 \end{itemize}
 
 \subsection{Atividades}
-
-\section{Execução do projeto}
-
-Relacione as atividades com os integrantes, crie um cronograma conforme orientações
-\subsection{Backlog e sprints}
--- item obrigatório --
-
-Evidencie todos os stakeholders envolvidos
-
-
-\subsection{Estado atual}
-Apresente os artefatos gerados em ordem cronológica, conforme processo.
-
-
-\section{Referências bibliográficas}
-Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
-
-Exemplo: Redes de computadores, segundo \cite{t2013} é considerada..... Já \cite{kurose2010} apresenta uma versão...
-
-Analisando os pressupostos de \cite{ref3} e \cite{ref4} concluimos que....
-
-
-\renewcommand\refname{} %%Referências bibliográficas}  
-\bibliographystyle{ieeetr}
-\bibliography{referencias}  
-
-
-=================================================
-\section{Elementos textuais - Alguns exemplos}
-
-Esta seção apresenta exemplos de elementos textuais. \textbf{Remova-a da versão final do texto}.
-
-
-\subsection{Colocar elementos em itens}
-
-Texto antes da lista
-
 \begin{itemize}
-	\item First item in a list 
-	\item Second item in a list 
-\item Third item in a list
+	\item \textbf{Análise de negócios:} Atividade executada pelos analistas ne negócio onde as funcionalidades são descritas conforme o documento de modelo de requisitos.
+	\item \textbf{Revisão de código:} Atividade realizada por um desenvolvedor com maior experiência na equipe, onde este verifica se o código está dentro dos padrões
+	de desenvolvimento e se existe alguma melhoria que pode ser realizada na implementação.
+	\item \textbf{Atualização ambiente de qualidade:} Atividade realizada pelo atualizador, onde os artefatos gerados durante o desenvolvumento são instalados no ambiente
+	da qualidade.
+	\item \textbf{Atualização ambiente de homologação:} Atividade realizada pelo atualizador, onde os artefatos gerados durante o desenvolvumento são instalados no ambiente
+	de homologação do cliente.
+	\item \textbf{Homologação interna:} Atividade realizada pelo analista de negócios, onde este realiza uma homologação da funcionalidade antes desta ser enviada ao cliente.
+	\item \textbf{Homologação externa:} Atividade realizada pelo cliente, onde este realiza uma homologação da funcionalidade e verifica se estas estão de acrodo com os requisitos.
+	\item \textbf{Implementação:}  Atividade realizada pelo desenvolvedor, onde é realizada a implementação da fucnionalidade junto ao sistema.
 \end{itemize}
-\subsubsection{Uma subseção de terceiro nivel}
-
-Exemplo de uma subseção
-
-\subsection{Tabelas}
-
-\input{tab_visao_estatica}
-
-Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab_visao_estatica} temos a relação de ....
 
 
-Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
+\clearpage
+\section{Elementos textuais}
 
 \subsection{Figuras}
 
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
 \begin{figure}
-\centering
-\includegraphics[width=\textwidth]{processo_de_software_BPMN1}
-\caption{Visão geral do processo de software}
+	\centering
+	\includegraphics[width=\textwidth]{processo_de_software_BPMN1}
+	\caption{Visão geral do processo de software}
 \end{figure}
-
 
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{processo_de_software_BPMN2}
 	\caption{Visão detalhada da etapa de análise de negócio}
-	\label{fig2}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{processo_de_software_BPMN3}
 	\caption{Visão detalhada da etapa de desenvolvimento}
-	\label{fig2}
 \end{figure}
+
+
 
 \end{document}
